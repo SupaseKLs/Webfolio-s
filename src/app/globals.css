@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  color: var(--foreground);
+ background: #0E0F11;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.bg-s {
+  background-image: url(../assets/img/me.jpg);
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh; /* Sets the body's height to 100% of the viewport height */
+  margin: 0; /* Removes default margin to ensure full coverage */
+}
+/* Optional: For better control on different screen sizes */
+@media (max-width: 768px) {
+  .bg-s {
+    background-size: cover; /* Maintain cover on smaller screens */
+    height: 100vh; /* Allow the height to adjust based on content */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 480px) {
+  .bg-s {
+    background-size: cover; /* Maintain cover on very small screens */
+    height: 100vh; /* Allow the height to adjust based on content */
+  }
 }
+

@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    height: 100vh;
+    padding-top: 250px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(211, 211, 211);
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #104893 10%, #0E0F11 100%);
+
+
+}
+
+.body{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body p{
+    font-size: 3.5vw;
+    margin-right: 1.5vw;
+    font-weight: 700;
+}
+
+.body span{
+    opacity: 0.2;
+}
