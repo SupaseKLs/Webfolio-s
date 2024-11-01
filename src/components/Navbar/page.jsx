@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import Logo from '@/assets/img/S.png'
+import Btn_Resume from '../btn-resume/page'
+
 import Pencil from '@/assets/svg/pencil.svg'
 import Link from 'next/link'
 import { AnimatePresence, delay, motion } from 'framer-motion'
@@ -67,10 +69,7 @@ const Navbar = () => {
                             <li><Link className='mx-4' href="/" />Project</li>
                             <li><Link className='mx-4' href="/" />Contact</li>
                         </ul>
-                        <ul className='flex items-center border-2 border-white px-6 py-1 rounded-full'>
-                            <li><Link href="/" />Resume</li>
-                            <Image className='ml-4' src={Pencil} width={20} height={20} alt='pencil' />
-                        </ul>
+                           <Btn_Resume />
                     </div>
                 </div>
 

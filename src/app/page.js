@@ -16,7 +16,9 @@ import { NumberTicker } from '../components/NumberTicker/page'
 export default function Home() {
   return (
     <>
-      <div className='relative'>
+      <div className="relative before:absolute before:top-0 before:left-0 before:w-full
+     before:h-full before:content-[''] before:opacity-[0.05] before:z-10 before:pointer-events-none
+     before:bg-[url('https://cliply.co/wp-content/uploads/2021/07/402107790_STATIC_NOISE_400.gif')]">
         <div className="fixed top-[700px] right-0">
           <CircleText />
 
@@ -69,51 +71,60 @@ export default function Home() {
             </div>
           </div>
           <div className='card grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <div className='pl-6 card-child my-10 w-9/12 flex flex-col items-center'>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
               <div className=' w-full h-auto'>
                 <Image className='rounded-xl' src={Wise} alt='Wise' />
               </div>
               <div className='pt-6 text-white text-left'>
-                <p className='text-xl md:text-2xl text-gray-500 font-bold'>• UI DESIGN</p>
-                <h1 className='text-3xl md:text-5xl'>It is a long established fact that a reader will be distracted.</h1>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• UX/UI DESIGN</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>Wise +</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
-            </div>
-            <div className='pl-6 card-child my-10 flex w-9/12 flex-col items-center'>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 flex w-10/12 flex-col items-center'>
               <div>
                 <Image className='rounded-xl' src={Ais} alt='Ais' />
               </div>
               <div className='pt-6 text-white text-left'>
-                <p className='text-xl md:text-2xl text-gray-500 font-bold'>• UI DESIGN</p>
-                <h1 className='text-3xl md:text-5xl'>It is a long established fact that a reader will be distracted.</h1>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• UI DESIGN</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>ArmFlag</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
-            </div>
-            <div className='pl-6 card-child my-10 w-9/12 flex flex-col items-center'>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
               <div>
                 <Image className='rounded-xl' src={Chula} alt='Chula' />
               </div>
               <div className='pt-6 text-white text-left'>
-                <p className='text-xl md:text-2xl text-gray-500 font-bold'>• FRONT-END DEV</p>
-                <h1 className='text-3xl md:text-5xl'>It is a long established fact that a reader will be distracted.</h1>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• UX/UI Design</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>PayGuard</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
-            </div>
-            <div className='pl-6 card-child my-10 w-9/12 flex flex-col items-center'>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
               <div>
                 <Image className='rounded-xl' src={Portfolio_aye} alt='Portfolio_aye' />
               </div>
               <div className='pt-6 text-white text-left'>
-                <p className='text-xl md:text-2xl text-gray-500 font-bold'>• UI DESIGN</p>
-                <h1 className='text-3xl md:text-5xl'>It is a long established fact that a reader will be distracted.</h1>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• FRONT-END DEV</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>Webfolio - Aye</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
-            </div>
-            <div className='pl-6 card-child my-10 w-9/12 flex flex-col items-center'>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
               <div>
                 <Image className='rounded-xl' src={Furniture} alt='Furniture' />
               </div>
               <div className='pt-6 text-white text-left'>
-                <p className='text-xl md:text-2xl text-gray-500 font-bold'>• FRONT-END DEV</p>
-                <h1 className='text-3xl md:text-5xl'>It is a long established fact that a reader will be distracted.</h1>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• COMING SOON</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>SYNLIVING</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
-            </div>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
+              <div>
+                <Image className='rounded-xl' src={Furniture} alt='Furniture' />
+              </div>
+              <div className='pt-6 text-white text-left'>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• FRONT-END DEV</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>MULTICAMP</span> It is a long established fact that a reader will be distracted.</h1>
+              </div>
+            </Link>
             
           </div>
         </section>

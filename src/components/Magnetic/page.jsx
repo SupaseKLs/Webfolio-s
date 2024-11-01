@@ -21,7 +21,7 @@ export default function Framer({children}) {
     const { x, y } = position;
     return (
         <motion.div
-            style={{position: "relative"}}
+            className='relative md:block hidden'
             ref={ref}
             onMouseMove={handleMouse}
             onMouseLeave={reset}

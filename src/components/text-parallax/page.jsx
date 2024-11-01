@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <div className='h-[30vh]'/>
+      <div className='h-[20vh]'/>
       <div ref={container}>
         <Slide src={Picture1} direction={'left'} left={"-10%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction={'right'} left={"-25%"} progress={scrollYProgress}/>
@@ -52,7 +52,7 @@ const Phrase = ({src}) => {
 
   return (
     <div className={'px-5 flex gap-5 items-center'}>
-      <p className='text-[7.5vw]'>Get in touch</p>
+      <p className='text-6xl md:text-9xl'>Get in touch</p>
       <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
         <Image style={{objectFit: "cover"}} src={src} alt="image" fill/>
       </span>
