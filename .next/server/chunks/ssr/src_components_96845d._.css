@@ -1,0 +1,106 @@
+/* [project]/src/components/text-gradient-opacity/page.module.css [app-client] (css) */
+.page-module__4vRkEG__main {
+  display: flex;
+  height: 100vh;
+  padding-top: 250px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #d3d3d3;
+  text-transform: uppercase;
+  background: linear-gradient(#104893 10%, #0e0f11 100%);
+}
+
+.page-module__4vRkEG__body {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-module__4vRkEG__body p {
+  font-size: 3.5vw;
+  margin-right: 1.5vw;
+  font-weight: 700;
+}
+
+.page-module__4vRkEG__body span {
+  opacity: .2;
+}
+
+
+/* [project]/src/components/ZoomParallax/style.module.css [app-client] (css) */
+.style-module__Y2fMsW__container {
+  height: 300vh;
+  position: relative;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el .style-module__Y2fMsW__imageContainer {
+  position: relative;
+  width: 25vw;
+  height: 25vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el .style-module__Y2fMsW__imageContainer img {
+  object-fit: cover;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(2) .style-module__Y2fMsW__imageContainer {
+  top: -30vh;
+  left: 5vw;
+  width: 35vw;
+  height: 30vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(3) .style-module__Y2fMsW__imageContainer {
+  top: -10vh;
+  left: -25vw;
+  width: 20vw;
+  height: 45vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(4) .style-module__Y2fMsW__imageContainer {
+  left: 27.5vw;
+  width: 25vw;
+  height: 25vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(5) .style-module__Y2fMsW__imageContainer {
+  top: 27.5vh;
+  left: 5vw;
+  width: 20vw;
+  height: 25vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(6) .style-module__Y2fMsW__imageContainer {
+  top: 27.5vh;
+  left: -22.5vw;
+  width: 30vw;
+  height: 25vh;
+}
+
+.style-module__Y2fMsW__container .style-module__Y2fMsW__sticky .style-module__Y2fMsW__el:nth-of-type(7) .style-module__Y2fMsW__imageContainer {
+  top: 28.5vh;
+  left: 30vw;
+  width: 25vw;
+  height: 25vh;
+}
+
+
+/*# sourceMappingURL=src_components_96845d._.css.map*/

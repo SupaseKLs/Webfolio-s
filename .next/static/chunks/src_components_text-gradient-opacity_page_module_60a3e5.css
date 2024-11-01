@@ -1,0 +1,27 @@
+/* [project]/src/components/text-gradient-opacity/page.module.css [app-client] (css) */
+.page-module__4vRkEG__main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #d3d3d3;
+}
+
+.page-module__4vRkEG__body {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-module__4vRkEG__body p {
+  font-size: 3.5vw;
+  margin: 0;
+  margin-right: 1.5vw;
+  font-weight: 700;
+}
+
+.page-module__4vRkEG__body span {
+  opacity: .2;
+}
+
+
+/*# sourceMappingURL=src_components_text-gradient-opacity_page_module_60a3e5.css.map*/
