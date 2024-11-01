@@ -44,7 +44,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 function index() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "group relative cursor-pointer px-6 py-2 border bg-white rounded-full overflow-hidden text-black text-center font-semibold",
+            className: "group relative cursor-pointer px-6 py-2 border bg-white hover:border-none rounded-full overflow-hidden text-black text-center font-semibold",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "translate-x-1 pl-4 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block",
@@ -202,16 +202,16 @@ const Navbar = ()=>{
     };
     const navLinks = [
         {
-            title: "About",
-            href: "/"
+            title: 'About',
+            href: '/'
         },
         {
-            title: "Project",
-            href: "/"
+            title: 'Project',
+            href: '/'
         },
         {
-            title: "Contact",
-            href: "/"
+            title: 'Contact',
+            href: '/'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -233,88 +233,82 @@ const Navbar = ()=>{
                                         alt: "logo"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar/page.jsx",
-                                        lineNumber: 65,
+                                        lineNumber: 67,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar/page.jsx",
-                                    lineNumber: 64,
+                                    lineNumber: 66,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "flex",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    className: "mx-4",
-                                                    href: "/"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Navbar/page.jsx",
-                                                    lineNumber: 68,
-                                                    columnNumber: 33
-                                                }, this),
-                                                "About"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Navbar/page.jsx",
-                                            lineNumber: 68,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    className: "mx-4",
-                                                    href: "/"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Navbar/page.jsx",
-                                                    lineNumber: 69,
-                                                    columnNumber: 33
-                                                }, this),
-                                                "Project"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Navbar/page.jsx",
-                                            lineNumber: 69,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    className: "mx-4",
-                                                    href: "/"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Navbar/page.jsx",
-                                                    lineNumber: 70,
-                                                    columnNumber: 33
-                                                }, this),
-                                                "Contact"
-                                            ]
-                                        }, void 0, true, {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                className: "mx-4",
+                                                href: "/",
+                                                children: "About"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Navbar/page.jsx",
+                                                lineNumber: 70,
+                                                columnNumber: 33
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar/page.jsx",
                                             lineNumber: 70,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                className: "mx-4",
+                                                href: "/",
+                                                children: "Project"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Navbar/page.jsx",
+                                                lineNumber: 71,
+                                                columnNumber: 33
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Navbar/page.jsx",
+                                            lineNumber: 71,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                className: "mx-4",
+                                                href: "/",
+                                                children: "Contact"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Navbar/page.jsx",
+                                                lineNumber: 72,
+                                                columnNumber: 33
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Navbar/page.jsx",
+                                            lineNumber: 72,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar/page.jsx",
-                                    lineNumber: 67,
+                                    lineNumber: 69,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$btn$2d$resume$2f$page$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/components/Navbar/page.jsx",
-                                    lineNumber: 72,
-                                    columnNumber: 28
+                                    lineNumber: 74,
+                                    columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar/page.jsx",
-                            lineNumber: 63,
+                            lineNumber: 65,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Navbar/page.jsx",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -327,7 +321,7 @@ const Navbar = ()=>{
                                 alt: "logo"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar/page.jsx",
-                                lineNumber: 77,
+                                lineNumber: 79,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -336,19 +330,19 @@ const Navbar = ()=>{
                                 children: "Menu"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar/page.jsx",
-                                lineNumber: 78,
+                                lineNumber: 80,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Navbar/page.jsx",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Navbar/page.jsx",
-                lineNumber: 61,
+                lineNumber: 63,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -370,12 +364,12 @@ const Navbar = ()=>{
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar/page.jsx",
                                     lineNumber: 93,
-                                    columnNumber: 37
+                                    columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar/page.jsx",
-                                lineNumber: 91,
-                                columnNumber: 33
+                                lineNumber: 92,
+                                columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 variants: containerVars,
@@ -384,21 +378,24 @@ const Navbar = ()=>{
                                 exit: "initial",
                                 className: "flex flex-col h-full justify-center items-center ",
                                 children: [
-                                    navLinks.map((link, index)=>{
+                                    navLinks.map((link)=>{
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "overflow-hidden pt-2",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavLink, {
-                                                title: link.title,
-                                                href: link.href
-                                            }, index, false, {
-                                                fileName: "[project]/src/components/Navbar/page.jsx",
-                                                lineNumber: 100,
-                                                columnNumber: 53
-                                            }, this)
-                                        }, void 0, false, {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileNavLink, {
+                                                    title: link.title,
+                                                    href: link.href
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Navbar/page.jsx",
+                                                    lineNumber: 105,
+                                                    columnNumber: 49
+                                                }, this)
+                                            ]
+                                        }, link.title, true, {
                                             fileName: "[project]/src/components/Navbar/page.jsx",
-                                            lineNumber: 99,
-                                            columnNumber: 49
+                                            lineNumber: 104,
+                                            columnNumber: 45
                                         }, this);
                                     }),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ul, {
@@ -422,13 +419,13 @@ const Navbar = ()=>{
                                                     children: "Resume"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar/page.jsx",
-                                                    lineNumber: 118,
-                                                    columnNumber: 45
+                                                    lineNumber: 121,
+                                                    columnNumber: 41
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar/page.jsx",
-                                                lineNumber: 117,
-                                                columnNumber: 41
+                                                lineNumber: 120,
+                                                columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 className: "ml-4",
@@ -438,35 +435,35 @@ const Navbar = ()=>{
                                                 alt: "pencil"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar/page.jsx",
-                                                lineNumber: 120,
-                                                columnNumber: 41
+                                                lineNumber: 123,
+                                                columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Navbar/page.jsx",
-                                        lineNumber: 110,
-                                        columnNumber: 37
+                                        lineNumber: 113,
+                                        columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Navbar/page.jsx",
                                 lineNumber: 95,
-                                columnNumber: 33
+                                columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Navbar/page.jsx",
-                        lineNumber: 90,
-                        columnNumber: 29
+                        lineNumber: 91,
+                        columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Navbar/page.jsx",
-                    lineNumber: 84,
-                    columnNumber: 25
+                    lineNumber: 85,
+                    columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar/page.jsx",
-                lineNumber: 81,
+                lineNumber: 83,
                 columnNumber: 13
             }, this)
         ]
@@ -474,7 +471,6 @@ const Navbar = ()=>{
 };
 _s(Navbar, "xG1TONbKtDWtdOTrXaTAsNhPg/Q=");
 _c = Navbar;
-const __TURBOPACK__default__export__ = Navbar;
 const mobileLinkVars = {
     initial: {
         y: "30vh",
@@ -510,16 +506,17 @@ const MobileNavLink = ({ title, href })=>{
             children: title
         }, void 0, false, {
             fileName: "[project]/src/components/Navbar/page.jsx",
-            lineNumber: 153,
+            lineNumber: 154,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Navbar/page.jsx",
-        lineNumber: 152,
+        lineNumber: 153,
         columnNumber: 9
     }, this);
 };
 _c1 = MobileNavLink;
+const __TURBOPACK__default__export__ = Navbar;
 var _c, _c1;
 __turbopack_refresh__.register(_c, "Navbar");
 __turbopack_refresh__.register(_c1, "MobileNavLink");
@@ -709,7 +706,7 @@ function Home() {
         className: "overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "h-[30vh]"
+                className: "h-[20vh]"
             }, void 0, false, {
                 fileName: "[project]/src/components/text-parallax/page.jsx",
                 lineNumber: 31,
@@ -806,7 +803,7 @@ const Phrase = ({ src })=>{
         className: 'px-5 flex gap-5 items-center',
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-[7.5vw]",
+                className: "text-6xl md:text-9xl",
                 children: "Get in touch"
             }, void 0, false, {
                 fileName: "[project]/src/components/text-parallax/page.jsx",
@@ -1262,9 +1259,7 @@ function Framer({ children }) {
     };
     const { x, y } = position;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-        style: {
-            position: "relative"
-        },
+        className: "relative md:block hidden",
         ref: ref,
         onMouseMove: handleMouse,
         onMouseLeave: reset,
@@ -1359,6 +1354,7 @@ const AnimatedCircle = ()=>{
                         className: "absolute w-24 h-24 rounded-full bg-cover",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             className: "bg-center",
+                            alt: "Sred",
                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$img$2f$Sred$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$img$2f$Sred$2e$png__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]
                         }, void 0, false, {
                             fileName: "[project]/src/components/CircleText/page.jsx",

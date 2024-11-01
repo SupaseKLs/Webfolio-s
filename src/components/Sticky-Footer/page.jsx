@@ -144,28 +144,27 @@ export default function Footer() {
 
 
           <motion.svg
-            width="776"
-            ref={ref}
-            height="137"
-            viewBox="0 0 776 137"
-            fill="none"
-            className="my-8 sm:h-fit h-20 md:px-8 px-2 footer-logo w-full"
-            xmlns="http://www.w3.org/2000/svg"
-            initial="hidden"
-            animate={isInView ? 'visible' : 'hidden'}>
-            {pathArr.map((path, index) => {
-              return (
-                <>
-                  <motion.path
-                    custom={index}
-                    variants={variants}
-                    d={path}
-                    fill="#3E7AEE"
-                  />
-                </>
-              );
-            })}
-          </motion.svg>
+  width="776"
+  ref={ref}
+  height="137"
+  viewBox="0 0 776 137"
+  fill="none"
+  className="my-8 sm:h-fit h-20 md:px-8 px-2 footer-logo w-full"
+  xmlns="http://www.w3.org/2000/svg"
+  initial="hidden"
+  animate={isInView ? 'visible' : 'hidden'}
+>
+  {pathArr.map((path, index) => (
+    <motion.path
+      key={index}  // Add a unique key for each path
+      custom={index}
+      variants={variants}
+      d={path}
+      fill="#3E7AEE"
+    />
+  ))}
+</motion.svg>
+
 
         </motion.div>
       </div>
