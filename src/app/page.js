@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar/page';
 import Image from 'next/image';
 import Wise from '@/assets/img/p1.jpg';
-import Ais from '@/assets/img/p2.jpg';
+import Scg from '@/assets/img/p2.jpg';
 import Chula from '@/assets/img/p3.jpg'
 import Portfolio_aye from '@/assets/img/p5.jpg'
 import Furniture from '@/assets/img/p6.png'
@@ -51,7 +51,7 @@ export default function Home() {
 
         </section>
 
-        <section className='px-6 py-10 bg-gradient-to-t from-[#104893] to-[#0E0F11] h-full flex-row md:flex justify-around items-center'>
+        <section className='px-6 py-10 bg-gradient-to-t from-[#104893] to-[#0E0F11] h-full md:h-96 flex-row md:flex justify-around items-center'>
           <div className='text-5xl text-white font-semibold w-11/12 md:w-6/12'>
             <h1 className='uppercase'>Explore my creative projects and get inspired! Here</h1>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
             </Link>
             <Link href="" className='pl-6 card-child my-10 flex w-10/12 flex-col items-center'>
               <div>
-                <Image className='rounded-xl' src={Ais} alt='Ais' />
+                <Image className='rounded-xl' src={Scg} alt='Scg' />
               </div>
               <div className='pt-6 text-white text-left'>
                 <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• UI DESIGN</p>
@@ -123,6 +123,15 @@ export default function Home() {
               <div className='pt-6 text-white text-left'>
                 <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• FRONT-END DEV</p>
                 <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>MULTICAMP</span> It is a long established fact that a reader will be distracted.</h1>
+              </div>
+            </Link>
+            <Link href="" className='pl-6 card-child my-10 w-10/12 flex flex-col items-center'>
+              <div>
+                <Image className='rounded-xl' src={Furniture} alt='Furniture' />
+              </div>
+              <div className='pt-6 text-white text-left'>
+                <p className='text-xl md:text-2xl text-gray-500 font-bold py-2'>• IOT</p>
+                <h1 className='text-2xl md:text-4xl'><span className='text-4xl md:text-5xl font-bold'>SightLine</span> It is a long established fact that a reader will be distracted.</h1>
               </div>
             </Link>
             

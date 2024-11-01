@@ -18,13 +18,21 @@
 }
 
 .page-module__4vRkEG__body p {
-  font-size: 5.5vw;
+  font-size: 3.5vw;
   margin-right: 1.5vw;
   font-weight: 700;
 }
 
 .page-module__4vRkEG__body span {
   opacity: .2;
+}
+
+@media (width <= 768px) {
+  .page-module__4vRkEG__body p {
+    font-size: 7.5vw;
+    margin-right: 1.5vw;
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=src_components_text-gradient-opacity_page_module_b52d8e.css.map*/

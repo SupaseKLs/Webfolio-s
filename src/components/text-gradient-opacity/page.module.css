@@ -19,7 +19,7 @@
 }
 
 .body p{
-    font-size: 5.5vw;
+    font-size: 3.5vw;
     margin-right: 1.5vw;
     font-weight: 700;
 }
@@ -27,3 +27,12 @@
 .body span{
     opacity: 0.2;
 }
+
+@media (max-width: 768px) {
+    
+    .body p{
+        font-size:7.5vw;
+        margin-right: 1.5vw;
+        font-weight: 700;
+    }
+     }

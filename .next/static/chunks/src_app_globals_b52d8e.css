@@ -1185,6 +1185,10 @@ body {
     display: none;
   }
 
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:w-6\/12 {
     width: 50%;
   }
