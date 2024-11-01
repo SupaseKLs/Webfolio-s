@@ -51,13 +51,13 @@ export default function Home() {
 
         </section>
 
-        <section className='bg-gradient-to-t from-[#104893] to-[#0E0F11] h-96 flex justify-around items-center'>
-          <div className='text-5xl text-white font-semibold w-4/12'>
+        <section className='px-6 py-10 bg-gradient-to-t from-[#104893] to-[#0E0F11] h-full flex-row md:flex justify-around items-center'>
+          <div className='text-5xl text-white font-semibold w-11/12 md:w-6/12'>
             <h1 className='uppercase'>Explore my creative projects and get inspired! Here</h1>
           </div>
           <div>
             <p className="whitespace-pre-wrap text-8xl font-medium tracking-tighter text-black dark:text-white">
-              <NumberTicker value={52} />
+              <NumberTicker value={6} /><span>+</span>
             </p>
           </div>
         </section>
