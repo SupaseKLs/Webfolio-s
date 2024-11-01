@@ -19,7 +19,7 @@ const AnimatedCircle = () => {
                     <div
                         className="absolute w-24 h-24 rounded-full bg-cover"
                     >
-                        <Image className="bg-center" src={Sred} />
+                        <Image className="bg-center" alt='Sred' src={Sred} />
                     </div>
 
                     <div className="absolute w-full h-full flex items-center justify-center">
