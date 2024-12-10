@@ -36,7 +36,6 @@ export default function Home() {
 
         <section className="h-full" id="about">
           <div className="relative py-20 flex justify-center">
-            <ClipPathSvg />
             <video
               src="./s.MP4"
               playsInline
@@ -45,7 +44,6 @@ export default function Home() {
               loop
               muted
               className="w-11/12 rounded-xl h-8/12 object-cover"
-              style={{ clipPath: "url(#customClipPath)" }}
             />
           </div>
         </section>
