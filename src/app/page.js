@@ -39,6 +39,8 @@ export default function Home() {
             <ClipPathSvg />
             <video
               src="./s.MP4"
+              playsInline
+          loading="lazy"
               autoPlay
               loop
               muted
@@ -91,7 +93,7 @@ export default function Home() {
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
-                <Image className="rounded-xl" src={MuchMedia} alt="Furniture" />
+                <Image className="rounded-xl" priority src={MuchMedia} alt="Furniture" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
@@ -111,6 +113,7 @@ export default function Home() {
             >
               <div>
                 <Image
+                priority
                   className="rounded-xl"
                   src={Portfolio_aye}
                   alt="Portfolio_aye"
@@ -133,7 +136,7 @@ export default function Home() {
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
-                <Image className="rounded-xl" src={Multicamp} alt="Furniture" />
+                <Image className="rounded-xl" priority src={Multicamp} alt="Furniture" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
@@ -152,7 +155,7 @@ export default function Home() {
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
-                <Image className="rounded-xl" src={Furniture} alt="Furniture" />
+                <Image className="rounded-xl" priority src={Furniture} alt="Furniture" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
@@ -172,7 +175,7 @@ export default function Home() {
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div className=" w-full h-auto">
-                <Image className="rounded-xl" src={Wise} alt="Wise" />
+                <Image className="rounded-xl" priority src={Wise} alt="Wise" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
@@ -189,7 +192,7 @@ export default function Home() {
               className="pl-6 card-child my-10 flex w-10/12 flex-col items-center"
             >
               <div>
-                <Image className="rounded-xl" src={Scg} alt="Scg" />
+                <Image className="rounded-xl" priority src={Scg} alt="Scg" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
@@ -208,7 +211,7 @@ export default function Home() {
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
-                <Image className="rounded-xl" src={Chula} alt="Chula" />
+                <Image className="rounded-xl" priority src={Chula} alt="Chula" />
               </div>
               <div className="pt-6 text-white text-left">
                 <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">

@@ -65,6 +65,7 @@ export default function Index() {
                             <div className={styles.imageContainer}>
                                 <Image
                                     src={src}
+                                    priority
                                     fill
                                     alt="image"
                                     placeholder='blur'

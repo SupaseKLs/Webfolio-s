@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <link rel="icon" href="/assets/img/S.png" />
+     <link rel="icon" href="/assets/img/S.ico" />
       <meta property="og:title" content="SucSek" />
       <meta property="og:description" content="SucSek Studio" />
       <meta property="og:image" content="/assets/img/supasek.png" />
