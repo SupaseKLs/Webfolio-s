@@ -21,6 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <link rel="icon" href="/assets/img/S.png" />
+      <meta property="og:title" content="SucSek" />
+      <meta property="og:description" content="SucSek Studio" />
+      <meta property="og:image" content="/assets/img/supasek.png" />
+      <meta property="og:type" content="website" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
