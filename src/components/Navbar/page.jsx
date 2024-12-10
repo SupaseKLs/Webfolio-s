@@ -1,20 +1,14 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
-import Logo from '@/assets/img/S.png';
-import Btn_Resume from '../btn-resume/page';
-
-import Pencil from '@/assets/svg/pencil.svg';
+"use client";
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
+import Magnetic from '@/components/Magnetic/page'
 
 const Navbar = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
     const [open, setOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setOpen((prevOpen) => !prevOpen);
-    };
-
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const menuVars = {
         initial: {
             scaleY: 0,
@@ -35,7 +29,9 @@ const Navbar = () => {
             },
         },
     };
-
+    const toggleMenu = () => {
+        setOpen((prevOpen) => !prevOpen);
+    };
     const containerVars = {
         initial: {
             transition: {
@@ -53,33 +49,159 @@ const Navbar = () => {
     };
 
     const navLinks = [
-        { title: 'About', href: '/' },
-        { title: 'Project', href: '/' },
-        { title: 'Contact', href: '/' },
+        { title: 'About', href: '#About' },
+        { title: 'Project', href: '#Projects' },
+        { title: 'Contact', href: '#Contact' },
     ];
+    const menuItems = [
+        { name: "Home", href: "/" },
+        { name: "Projects", href: "#Projects" },
+        { name: "Contact", href: "#Contact" }
+    ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollState = window.scrollY;
+
+            if (currentScrollState > scrollPosition && currentScrollState > 100) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+            setScrollPosition(currentScrollState);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrollPosition]);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     return (
         <>
-            <nav className='text-white h-24'>
-                <div className="max-w-screen-lg mx-auto">
-                    <div className='h-24 hidden md:flex justify-between items-center md:px-10 uppercase text-xl'>
-                        <div className="flex">
-                            <Image src={Logo} width={70} height={70} alt='logo' />
-                        </div>
-                        <ul className='flex'>
-                            <li><Link className='mx-4' href="/">About</Link></li>
-                            <li><Link className='mx-4' href="/">Project</Link></li>
-                            <li><Link className='mx-4' href="/">Contact</Link></li>
-                        </ul>
-                        <Btn_Resume />
+            <motion.nav
+                className={`w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-16 font-medium flex justify-between items-center 
+        ${isVisible ? "translate-y-0" : "-translate-y-full"} 
+        ${scrollPosition >= 50 ? 'bg-black text-white bg-opacity-30 backdrop-blur-md ' : 'bg-transparent text-black'}`}
+                variants={{
+                    visible: { y: 0 },
+                    hidden: { y: '-100%' },
+                }}
+                initial={{ y: '-100%' }}
+                animate={isVisible ? 'visible' : 'hidden'}
+                transition={{ duration: 0.2, ease: 'easeInOut' }}
+            >
+                {/* Desktop Menu */}
+                <div className="hidden md:flex lg:flex">
+                    <ul className='flex'>
+                        {menuItems.map((item) => (
+                            <motion.li
+                                key={item.name} // Use the `name` as the unique key
+                                initial="initial"
+                                whileHover="hovered"
+                                className="relative cursor-pointer px-2 text-lg font-semibold overflow-hidden font-Inter"
+                            >
+                                <motion.div
+                                    className='text-text_color'
+                                    variants={{
+                                        initial: { y: 0 },
+                                        hovered: { y: "-100%" },
+                                    }}
+                                >
+                                    <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
+                                </motion.div>
+                                <motion.div
+                                    className='absolute inset-0 px-2 text-white'
+                                    variants={{
+                                        initial: { y: "100%" },
+                                        hovered: { y: 0 },
+                                    }}
+                                >
+                                    <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
+                                </motion.div>
+                            </motion.li>
+                        ))}
+                    </ul>
+
+                </div>
+
+                {/* Hamburger Button (Mobile) */}
+                <div className='cursor-pointer w-full flex items-center justify-between md:hidden p-6'>
+                    <div className="text-md font-bold" onClick={toggleMenu}>
+                        {open ? 'Close' : 'Menu'}
+                    </div>
+                <div className="group block relative cursor-pointer text-xl p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
+                        <a
+                            target='_blank'
+                            href="/Resume.pdf"  // Replace with the correct path to your PDF file
+                            className="w-full h-full block"
+                        >
+                            <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
+                                Resume
+                            </span>
+                            <div className="flex gap-2 text-white bg-blue-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
+                                <span>Resume</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <div className='cursor-pointer md:hidden flex items-center justify-between p-6'>
-                    <Image src={Logo} width={70} height={70} alt='logo' />
-                    <div className="text-md font-bold" onClick={toggleMenu}>Menu</div>
+                {/* Right Section (Desktop) */}
+                <div className="hidden lg:flex">
+                    <div>
+                        <h1 className='text-gray-300'>Hello, my name is</h1>
+                        <motion.h1
+                            initial="initial"
+                            whileHover="hovered"
+                            className="relative cursor-pointer text-lg font-semibold overflow-hidden font-Inter"
+                        >
+                            <motion.div
+                                className='text-text_color'
+                                variants={{
+                                    initial: { y: 0 },
+                                    hovered: { y: "-100%" }
+                                }}
+                            >
+                                <Link href="/">Supasek Laobutsa</Link>
+                            </motion.div>
+                            <motion.div
+                                className='absolute inset-0 text-white'
+                                variants={{
+                                    initial: { y: "100%" },
+                                    hovered: { y: 0, }
+                                }}
+                            >
+                                <Link href="/">Supasek Laobutsa</Link>
+                            </motion.div>
+                        </motion.h1>
+                    </div>
                 </div>
-            </nav>
+
+                {/* Resume Button s*/}
+                <Magnetic>
+                    <div className="group block relative cursor-pointer text-xl p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
+                        <a
+                            target='_blank'
+                            href="/Resume.pdf"  // Replace with the correct path to your PDF file
+                            className="w-full h-full block"
+                        >
+                            <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
+                                Resume
+                            </span>
+                            <div className="flex gap-2 text-white bg-blue-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
+                                <span>Resume</span>
+                            </div>
+                        </a>
+                    </div>
+                </Magnetic>
+
+
+            </motion.nav>
+
             <AnimatePresence>
                 {open && (
                     <motion.div
@@ -87,11 +209,9 @@ const Navbar = () => {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        className="origin-top fixed left-0 top-0 w-full h-screen bg-black bg-opacity-30 backdrop-blur-md text-white p-6">
+                        className="origin-top fixed z-30 left-0 top-0 w-full h-screen bg-black bg-opacity-30 backdrop-blur-md text-white p-6">
                         <div className="flex h-full flex-col">
-                            <div className='md:hidden flex justify-end items-center'>
-                                <div className="cursor-pointer text-md font-bold" onClick={toggleMenu}>Close</div>
-                            </div>
+
                             <motion.div
                                 variants={containerVars}
                                 initial="initial"
@@ -102,6 +222,7 @@ const Navbar = () => {
                                     navLinks.map((link) => {
                                         return (
                                             <div className="overflow-hidden pt-2" key={link.title}> {/* Key added here */}
+                                            
                                                 <MobileNavLink
                                                     title={link.title}
                                                     href={link.href}
@@ -110,27 +231,13 @@ const Navbar = () => {
                                         );
                                     })
                                 }
-                                <motion.ul
-                                    className='flex items-center border-2 border-white px-6 py-1 mt-6 rounded-full'
-                                    initial={{ opacity: 0 }} // Start invisible
-                                    animate={{ opacity: 1 }}  // Fade in
-                                    exit={{ opacity: 0 }}     // Fade out on exit
-                                    transition={{ duration: 0.8 }} // Duration of the fade-in/out
-                                >
-                                    <li>
-                                        <Link href="">Resume</Link>
-                                    </li>
-                                    <Image className='ml-4' src={Pencil} width={20} height={20} alt='pencil' />
-                                </motion.ul>
                             </motion.div>
                         </div>
                     </motion.div>
                 )}
-            </AnimatePresence>
-        </>
+            </AnimatePresence></>
     );
 };
-
 const mobileLinkVars = {
     initial: {
         y: "30vh",
@@ -155,5 +262,4 @@ const MobileNavLink = ({ title, href }) => {
         </motion.div>
     );
 };
-
 export default Navbar;

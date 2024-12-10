@@ -2,7 +2,7 @@
 import Magnetic from '../Magnetic/page'
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import Sred from '@/assets/img/Sred.png'
+import Sred from '@/assets/img/s.gif'
 
 const AnimatedCircle = () => {
     const text = "WEBFOLIO - SUCKSEK STUDIO -";
@@ -17,7 +17,7 @@ const AnimatedCircle = () => {
             <div className="flex items-center justify-center w-60">
                 <div className="relative w-52 h-52 rounded-full flex items-center justify-center overflow-hidden">
                     <div
-                        className="absolute w-24 h-24 rounded-full bg-cover"
+                        className="absolute w-32 h-24 rounded-full bg-cover"
                     >
                         <Image className="bg-center" alt='Sred' src={Sred} />
                     </div>
