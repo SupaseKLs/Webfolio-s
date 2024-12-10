@@ -199,7 +199,7 @@ export default function Home() {
                   <span className="text-4xl md:text-5xl font-bold">
                     ArmFlag
                   </span>{" "}
-                  I developed "ArmFlag," a smart armband for health tracking with gamification, gaining business experience.
+                  I developed ArmFlag, a smart armband for health tracking with gamification, gaining business experience.
                 </h1>
               </div>
             </Link>

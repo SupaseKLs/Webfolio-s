@@ -1139,7 +1139,7 @@ function Home() {
                                                                 columnNumber: 19
                                                             }, this),
                                                             " ",
-                                                            'I developed "ArmFlag," a smart armband for health tracking with gamification, gaining business experience.'
+                                                            "I developed ArmFlag, a smart armband for health tracking with gamification, gaining business experience."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/page.js",
