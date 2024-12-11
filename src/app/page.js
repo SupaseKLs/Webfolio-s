@@ -35,11 +35,11 @@ export default function Home() {
         <Text_opacity className="text-white uppercase" />
 
         <section className="h-full" id="about">
-          <div className="relative py-20 flex justify-center">
+          <div className="my-20 flex justify-center">
             <video
-              src="/s.mp4"
+              src="./supasek1.mp4"
               playsInline
-          loading="lazy"
+              loading="lazy"
               autoPlay
               loop
               muted
