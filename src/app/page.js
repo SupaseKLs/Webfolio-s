@@ -5,7 +5,6 @@ import Scg from "@/assets/img/p2.jpg";
 import Chula from "@/assets/img/p3.jpg";
 import Portfolio_aye from "@/assets/img/Aye.png";
 import Furniture from "@/assets/img/Synliving.png";
-import ClipPathSvg from "@/components/ClipPathSvg/page";
 import MuchMedia from "@/assets/img/MuchMedia.png";
 import Multicamp from "@/assets/img/Multicamp.png";
 import Link from "next/link";
@@ -87,7 +86,7 @@ export default function Home() {
           </div>
           <div className="card grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link
-              href="https://much-media-qj5w.vercel.app/"
+              href="https://much-media-7gcj.vercel.app/"
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
