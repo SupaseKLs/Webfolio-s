@@ -37,7 +37,7 @@ export default function Home() {
         <section className="h-full" id="about">
           <div className="relative py-20 flex justify-center">
             <video
-              src="./s.MP4"
+              src="/s.mp4"
               playsInline
           loading="lazy"
               autoPlay
