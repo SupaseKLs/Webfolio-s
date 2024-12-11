@@ -43,7 +43,7 @@ export default function Home() {
               autoPlay
               loop
               muted
-              className="w-11/12 rounded-xl h-8/12 object-cover"
+              className="w-11/12 rounded-xl h-[400px] md:h-[700px] object-cover"
             />
           </div>
         </section>

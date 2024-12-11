@@ -610,7 +610,7 @@ function Home() {
                                 autoPlay: true,
                                 loop: true,
                                 muted: true,
-                                className: "w-11/12 rounded-xl h-8/12 object-cover"
+                                className: "w-11/12 rounded-xl h-[400px] md:h-[700px] object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.js",
                                 lineNumber: 39,

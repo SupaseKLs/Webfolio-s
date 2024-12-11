@@ -499,6 +499,18 @@ img, video {
   height: 100vh;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1239,6 +1251,10 @@ body {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-\[700px\] {
+    height: 700px;
   }
 
   .md\:w-6\/12 {
