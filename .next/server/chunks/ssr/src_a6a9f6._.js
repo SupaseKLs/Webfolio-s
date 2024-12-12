@@ -1448,7 +1448,7 @@ function Footer() {
                                                 className: "my-6",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     className: "relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100",
-                                                    href: "",
+                                                    href: "https://www.linkedin.com/in/supasek-laobutsa-83a969318/",
                                                     children: "LinkedIn"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Sticky-Footer/page.jsx",
@@ -1464,7 +1464,7 @@ function Footer() {
                                                 className: "my-6",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     className: "relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100",
-                                                    href: "",
+                                                    href: "https://www.instagram.com/kesapus__/",
                                                     children: "Instagram"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Sticky-Footer/page.jsx",
@@ -1480,7 +1480,7 @@ function Footer() {
                                                 className: "my-6",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     className: "relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100",
-                                                    href: "",
+                                                    href: "https://www.facebook.com/supasek.laobutsa",
                                                     children: "Facebook"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Sticky-Footer/page.jsx",

@@ -124,17 +124,17 @@ export default function Footer() {
               <h1 className='py-6 text-5xl font-bold uppercase'>Social</h1>
               <ul>
                 <li className='my-6'>
-                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="">
+                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="https://www.linkedin.com/in/supasek-laobutsa-83a969318/">
                     LinkedIn
                   </Link>
                 </li>
                 <li className='my-6'>
-                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="">
+                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="https://www.instagram.com/kesapus__/">
                     Instagram
                   </Link>
                 </li>
                 <li className='my-6'>
-                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="">
+                  <Link className="relative text-3xl after:absolute after:bottom-0 after:left-0 after:h-[4px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-black hover:after:origin-bottom-left hover:after:scale-x-100" href="https://www.facebook.com/supasek.laobutsa">
                     Facebook
                   </Link>
                 </li>
