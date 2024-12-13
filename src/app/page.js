@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className="card grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link
-              href="https://much-media-7gcj.vercel.app/"
+              href="https://much-media.vercel.app/"
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href="https://webfolio-aye-4x1j.vercel.app/"
+              href="https://webfolio-aye.vercel.app/"
               className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
             >
               <div>

@@ -147,8 +147,8 @@ const Navbar = ()=>{
     };
     const navLinks = [
         {
-            title: 'About',
-            href: '#About'
+            title: 'Home',
+            href: '/'
         },
         {
             title: 'Project',
