@@ -15,7 +15,67 @@ import Zoom_Parallax from "../components/ZoomParallax/page";
 import Sticky_Footer from "../components/Sticky-Footer/page";
 import CircleText from "../components/CircleText/page";
 import { NumberTicker } from "../components/NumberTicker/page";
+import ReadmoreWorks from "@/components/ReadmoreWork/page";
 export default function Home() {
+  const projects = [
+    {
+      title: "MuchMedia",
+      role: "• FRONT-END DEV",
+      description:
+        "Created the MuchMedia website, a multimedia platform, as a second-year team project focused on user interaction.",
+      image: MuchMedia,
+      link: "https://much-media.vercel.app/",
+    },
+    {
+      title: "Webfolio - Aye",
+      role: "• FRONT-END DEV",
+      description:
+        "Created Webfolio, a responsive, user-friendly platform for showcasing work on mobile and desktop.",
+      image: Portfolio_aye,
+      link: "https://webfolio-aye.vercel.app/",
+    },
+    {
+      title: "Multicamp",
+      role: "• FRONT-END DEV",
+      description:
+        "Presented and taught basic web application development, creating all content as a web application.",
+      image: Multicamp,
+      link: "https://multicamp-workshop.vercel.app/",
+    },
+    {
+      title: "SYNLIVING",
+      role: "• COMING SOON",
+      description:
+        "Created an e-commerce furniture website with categorization, cart, authentication, and new arrivals.",
+      image: Furniture,
+      link: "https://www.figma.com/design/U5hTokbZyiswLkAitfKKUU/Furniture?node-id=0-1&t=IdOFGuk4UuNf1NRF-1/",
+    },
+    {
+      title: "Wise +",
+      role: "• UX/UI DESIGN",
+      description:
+        "Designed an application that helps solve fraud problems through online financial transactions.",
+      image: Wise,
+      link: "https://www.behance.net/gallery/214398637/Wise-",
+    },
+    {
+      title: "ArmFlag",
+      role: "• UI DESIGN",
+      description:
+        "Developed ArmFlag, a smart armband for health tracking with gamification, gaining business experience.",
+      image: Scg,
+      link: "https://www.behance.net/gallery/214398897/AlmFlag-EcoCare",
+    },
+    {
+      title: "PayGuard",
+      role: "• UX/UI Design",
+      description:
+        "Created an application to solve online finance fraud problems for a legal innovation competition.",
+      image: Chula,
+      link: "https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer",
+    },
+  ];
+
   return (
     <>
       <div
@@ -53,7 +113,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-7xl">My Path to Growth</h1>
           </div>
           <div className="w-11/12 mx-auto">
-            <div>
+            <div className="mt-20">
               <Horizontal />
             </div>
           </div>
@@ -84,146 +144,41 @@ export default function Home() {
               </h1>
             </div>
           </div>
-          <div className="card grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link
-              href="https://much-media.vercel.app/"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div>
-                <Image className="rounded-xl" priority src={MuchMedia} alt="Furniture" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • FRONT-END DEV
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    MuchMedia
-                  </span>{" "}
-                  Created the MuchMedia website, a multimedia platform, as a second-year team project focused on user interaction.
-                </h1>
-              </div>
-            </Link>
-            <Link
-              href="https://webfolio-aye.vercel.app/"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div>
-                <Image
-                priority
-                  className="rounded-xl"
-                  src={Portfolio_aye}
-                  alt="Portfolio_aye"
-                />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • FRONT-END DEV
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    Webfolio - Aye
-                  </span>{" "}
-                  Created Webfolio, a responsive, user-friendly platform for showcasing work on mobile and desktop.
-                </h1>
-              </div>
-            </Link>
-            <Link
-              href="https://multicamp-workshop.vercel.app/"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div>
-                <Image className="rounded-xl" priority src={Multicamp} alt="Furniture" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • FRONT-END DEV
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    Multicamp
-                  </span>{" "}
-                  Presented and taught basic web application development, creating all content as a web application.
-                </h1>
-              </div>
-            </Link>
-            <Link
-              href="https://www.figma.com/design/U5hTokbZyiswLkAitfKKUU/Furniture?node-id=0-1&t=IdOFGuk4UuNf1NRF-1/"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div>
-                <Image className="rounded-xl" priority src={Furniture} alt="Furniture" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • COMING SOON
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    SYNLIVING
-                  </span>{" "}
-                  Created an e-commerce furniture website with categorization, cart, authentication, and new arrivals.
-                </h1>
-              </div>
-            </Link>
 
-            <Link
-              href="https://www.behance.net/gallery/214398637/Wise-"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div className=" w-full h-auto">
-                <Image className="rounded-xl" priority src={Wise} alt="Wise" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • UX/UI DESIGN
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">Wise +</span>{" "}
-                  Designed an application that help solve fraud problems corruption through online financial transactions.
-                </h1>
-              </div>
-            </Link>
-            <Link
-              href="https://www.behance.net/gallery/214398897/AlmFlag-EcoCare"
-              className="pl-6 card-child my-10 flex w-10/12 flex-col items-center"
-            >
-              <div>
-                <Image className="rounded-xl" priority src={Scg} alt="Scg" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • UI DESIGN
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    ArmFlag
-                  </span>{" "}
-                  I developed ArmFlag, a smart armband for health tracking with gamification, gaining business experience.
-                </h1>
-              </div>
-            </Link>
-            <Link
-              href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-              className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
-            >
-              <div>
-                <Image className="rounded-xl" priority src={Chula} alt="Chula" />
-              </div>
-              <div className="pt-6 text-white text-left">
-                <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
-                  • UX/UI Design
-                </p>
-                <h1 className="text-xl md:text-2xl">
-                  <span className="text-4xl md:text-5xl font-bold">
-                    PayGuard
-                  </span>{" "}
-                  The competition is about creating legal innovations. I designed an application that solves fraud problems in online finance.
-                </h1>
-              </div>
-            </Link>
+          <div className="card grid grid-cols-1 md:grid-cols-2 gap-4">
+            {projects.map((project, index) => (
+              <Link
+                key={index}
+                href={project.link}
+                className="pl-6 card-child my-10 w-10/12 flex flex-col items-center"
+              >
+                <div className="overflow-hidden rounded-xl">
+                  <Image
+                    className="rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    priority
+                    src={project.image}
+                    alt={project.title}
+                  />
+                </div>
+                <div className="pt-6 text-white text-left">
+                  <p className="text-xl md:text-2xl text-gray-500 font-bold py-2">
+                    {project.role}
+                  </p>
+                  <h1 className="text-xl md:text-2xl">
+                    <span className="text-4xl md:text-5xl font-bold">
+                      {project.title}
+                    </span>{" "}
+                    {project.description}
+                  </h1>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="flex justify-center items-center">
+            <ReadmoreWorks />
           </div>
         </section>
+
         <Text_Parallax />
       </div>
       <footer id="Contact">

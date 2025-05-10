@@ -1,12 +1,12 @@
 'use client'
 import styles from './style.module.css';
 import Picture1 from '@/assets/img/multi.jpg';
-import Picture2 from '@/assets/img/p2.jpg';
-import Picture3 from '@/assets/img/p1.jpg';
-import Picture4 from '@/assets/img/p3.jpg'
-import Picture5 from '@/assets/img/p4.jpg'
-import Picture6 from '@/assets/img/p5.jpg'
-import Picture7 from '@/assets/img/Synliving.png'
+import Picture2 from '@/assets/img/w2.jpg';
+import Picture3 from '@/assets/img/w3.jpg';
+import Picture4 from '@/assets/img/w4.jpg'
+import Picture5 from '@/assets/img/w5.jpg'
+import Picture6 from '@/assets/img/w6.jpg'
+import Picture7 from '@/assets/img/w1.jpg'
 import Image from 'next/image';
 import { useScroll, useTransform, motion} from 'framer-motion';
 import { useRef } from 'react';

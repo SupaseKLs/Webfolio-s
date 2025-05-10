@@ -1,31 +1,14 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Horizontal = () => {
-  const videoRef = useRef([]);
-  const videoContainerRef = useRef();
-
-  gsap.registerPlugin(ScrollTrigger);
-
   useEffect(() => {
-    gsap.to(videoRef.current, {
-      xPercent: -110 * (videoRef.current.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: videoContainerRef.current,
-        scrub: 1,
-        start: "top top",
-        end: "+=" + videoContainerRef.current.offsetWidth,
-        pin: true,
-        snap: 1 / (videoRef.current.length - 1),
-      },
+    AOS.init({
+      duration: 1000, // ระยะเวลาการแสดงผล (1 วินาที)
+      once: true, // เล่นเอฟเฟกต์ครั้งเดียว
     });
-
-    return () => {
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
   }, []);
 
   const videos = [
@@ -37,16 +20,14 @@ const Horizontal = () => {
   ];
 
   return (
-    <main className="min-h-screen w-full mb-20 overflow-x-hidden">
-      <section
-        className="min-h-screen my-10 flex flex-nowrap items-center space-x-10 px-20 relative"
-        ref={videoContainerRef}
-      >
+    <main className="min-h-screen w-full mb-20 px-10">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
         {videos.map((video, index) => (
           <div
             key={index}
-            className="w-[400px] md:w-[300px] lg:w-[320px] lg:h-[550px] bg-gray-100 shrink-0 rounded-3xl"
-            ref={(el) => (videoRef.current[index] = el)}
+            className="w-[400px] md:w-[300px] lg:w-[320px] lg:h-[550px] bg-gray-100 rounded-3xl"
+            data-aos="fade-up" 
+            data-aos-delay={index * 200} // 👈 หน่วงเวลาตาม index
           >
             <video
               src={video.src}
@@ -56,7 +37,7 @@ const Horizontal = () => {
               autoPlay
               playsInline
             />
-            <div className="py-5 px-5 w-11/12 text-md flex flex-col  items-start">
+            <div className="py-5 px-5 w-11/12 text-md flex flex-col items-start">
               <h1 className="text-xl font-bold text-black">{video.header}</h1>
               <p className="text-black">{video.title}</p>
             </div>

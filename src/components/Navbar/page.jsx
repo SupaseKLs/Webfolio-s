@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import Magnetic from '@/components/Magnetic/page'
-
+import Logo from '@/assets/img/S.png'
+import Image from 'next/image';
 const Navbar = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
@@ -84,7 +85,7 @@ const Navbar = () => {
     return (
         <>
             <motion.nav
-                className={`w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-16 font-medium flex justify-between items-center 
+                className={`w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-20 py-3 font-medium 
         ${isVisible ? "translate-y-0" : "-translate-y-full"} 
         ${scrollPosition >= 50 ? 'bg-black text-white bg-opacity-30 backdrop-blur-md ' : 'bg-transparent text-black'}`}
                 variants={{
@@ -96,36 +97,58 @@ const Navbar = () => {
                 transition={{ duration: 0.2, ease: 'easeInOut' }}
             >
                 {/* Desktop Menu */}
-                <div className="hidden md:flex lg:flex">
-                    <ul className='flex'>
-                        {menuItems.map((item) => (
-                            <motion.li
-                                key={item.name} // Use the `name` as the unique key
-                                initial="initial"
-                                whileHover="hovered"
-                                className="relative cursor-pointer px-2 text-lg font-semibold overflow-hidden font-Inter"
-                            >
-                                <motion.div
-                                    className='text-text_color'
-                                    variants={{
-                                        initial: { y: 0 },
-                                        hovered: { y: "-100%" },
-                                    }}
+                <div className="hidden md:flex lg:flex justify-between">
+                    <div>
+                        <Image src={Logo} className='w-2/12' alt='Logo' />
+                    </div>
+                    <div className='flex items-center'>
+                        <ul className='flex'>
+                            {menuItems.map((item) => (
+                                <motion.li
+                                    key={item.name} // Use the `name` as the unique key
+                                    initial="initial"
+                                    whileHover="hovered"
+                                    className="relative cursor-pointer px-2 text-lg font-semibold overflow-hidden font-Inter"
                                 >
-                                    <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
-                                </motion.div>
-                                <motion.div
-                                    className='absolute inset-0 px-2 text-white'
-                                    variants={{
-                                        initial: { y: "100%" },
-                                        hovered: { y: 0 },
-                                    }}
+                                    <motion.div
+                                        className='text-text_color'
+                                        variants={{
+                                            initial: { y: 0 },
+                                            hovered: { y: "-100%" },
+                                        }}
+                                    >
+                                        <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
+                                    </motion.div>
+                                    <motion.div
+                                        className='absolute inset-0 px-2 text-white'
+                                        variants={{
+                                            initial: { y: "100%" },
+                                            hovered: { y: 0 },
+                                        }}
+                                    >
+                                        <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
+                                    </motion.div>
+                                </motion.li>
+                            ))}
+                        </ul>
+                        {/* Resume Button s*/}
+                        <Magnetic>
+                            <div className="group block relative cursor-pointer text-xl p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
+                                <a
+                                    target='_blank'
+                                    href="/Resume.pdf"  // Replace with the correct path to your PDF file
+                                    className="w-full h-full block"
                                 >
-                                    <Link href={item.href}>{item.name}</Link> {/* Use item.href and item.name */}
-                                </motion.div>
-                            </motion.li>
-                        ))}
-                    </ul>
+                                    <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
+                                        Resume
+                                    </span>
+                                    <div className="flex gap-2 text-white bg-blue-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
+                                        <span>Resume</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </Magnetic>
+                    </div>
 
                 </div>
 
@@ -134,55 +157,6 @@ const Navbar = () => {
                     <div className="text-md font-bold" onClick={toggleMenu}>
                         {open ? 'Close' : 'Menu'}
                     </div>
-                <div className="group block relative cursor-pointer text-xl p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
-                        <a
-                            target='_blank'
-                            href="/Resume.pdf"  // Replace with the correct path to your PDF file
-                            className="w-full h-full block"
-                        >
-                            <span className="translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
-                                Resume
-                            </span>
-                            <div className="flex gap-2 text-white bg-blue-400 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
-                                <span>Resume</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                {/* Right Section (Desktop) */}
-                <div className="hidden lg:flex">
-                    <div>
-                        <h1 className='text-gray-300'>Hello, my name is</h1>
-                        <motion.h1
-                            initial="initial"
-                            whileHover="hovered"
-                            className="relative cursor-pointer text-lg font-semibold overflow-hidden font-Inter"
-                        >
-                            <motion.div
-                                className='text-text_color'
-                                variants={{
-                                    initial: { y: 0 },
-                                    hovered: { y: "-100%" }
-                                }}
-                            >
-                                <Link href="/">Supasek Laobutsa</Link>
-                            </motion.div>
-                            <motion.div
-                                className='absolute inset-0 text-white'
-                                variants={{
-                                    initial: { y: "100%" },
-                                    hovered: { y: 0, }
-                                }}
-                            >
-                                <Link href="/">Supasek Laobutsa</Link>
-                            </motion.div>
-                        </motion.h1>
-                    </div>
-                </div>
-
-                {/* Resume Button s*/}
-                <Magnetic>
                     <div className="group block relative cursor-pointer text-xl p-2 w-32 border bg-white rounded-full overflow-hidden text-black text-center font-semibold">
                         <a
                             target='_blank'
@@ -197,7 +171,9 @@ const Navbar = () => {
                             </div>
                         </a>
                     </div>
-                </Magnetic>
+                </div>
+
+
 
 
             </motion.nav>
@@ -222,7 +198,7 @@ const Navbar = () => {
                                     navLinks.map((link) => {
                                         return (
                                             <div className="overflow-hidden pt-2" key={link.title}> {/* Key added here */}
-                                            
+
                                                 <MobileNavLink
                                                     title={link.title}
                                                     href={link.href}
