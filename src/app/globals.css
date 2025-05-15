@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  color: var(--foreground);
  background: #0E0F11;
 }
 .bg-s {
