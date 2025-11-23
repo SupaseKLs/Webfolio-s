@@ -213,7 +213,7 @@ const Navbar = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].nav, {
-                className: `w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-20 py-3 font-medium 
+                className: `w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-fit py-3 font-medium 
         ${isVisible ? "translate-y-0" : "-translate-y-full"} 
         ${scrollPosition >= 50 ? 'bg-black text-white bg-opacity-30 backdrop-blur-md ' : 'bg-transparent text-black'}`,
                 variants: {
@@ -607,7 +607,7 @@ const Horizontal = ()=>{
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center",
             children: videos.map((video, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-[400px] md:w-[300px] lg:w-[320px] lg:h-[550px] bg-gray-100 rounded-3xl",
+                    className: "w-full max-w-xs md:max-w-sm lg:max-w-md bg-gray-100 rounded-3xl",
                     "data-aos": "fade-up",
                     "data-aos-delay": index * 200,
                     children: [
@@ -621,10 +621,10 @@ const Horizontal = ()=>{
                         }, void 0, false, {
                             fileName: "[project]/src/components/Horizontal/page.jsx",
                             lineNumber: 32,
-                            columnNumber: 13
+                            columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "py-5 px-5 w-11/12 text-md flex flex-col items-start",
+                            className: "py-5 px-5 w-full text-md flex flex-col items-start",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-xl font-bold text-black",
@@ -632,7 +632,7 @@ const Horizontal = ()=>{
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Horizontal/page.jsx",
                                     lineNumber: 41,
-                                    columnNumber: 15
+                                    columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-black",
@@ -640,19 +640,19 @@ const Horizontal = ()=>{
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Horizontal/page.jsx",
                                     lineNumber: 42,
-                                    columnNumber: 15
+                                    columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Horizontal/page.jsx",
                             lineNumber: 40,
-                            columnNumber: 13
+                            columnNumber: 7
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "[project]/src/components/Horizontal/page.jsx",
                     lineNumber: 26,
-                    columnNumber: 11
+                    columnNumber: 5
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/Horizontal/page.jsx",
@@ -695,7 +695,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$Scro
 ;
 ;
 ;
-const phrase = "Hi! I’m S.I'm 19 years old and interested in UI/UX and front-end development. Nice to meet you!";
+const phrase = "Hi! I’m S.I'm 20 years old and interested in Software Engineer or Software Development. Nice to meet you!";
 function Home() {
     let refs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const body = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -1685,7 +1685,7 @@ function NumberTicker({ value, direction = "up", delay = 0, className = "", deci
         decimalPlaces
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: `inline-block tabular-nums text-black dark:text-white tracking-wider ${className}`,
+        className: `inline-block tabular-nums text-white tracking-wider ${className}`,
         ref: ref
     }, void 0, false, {
         fileName: "[project]/src/components/NumberTicker/page.jsx",

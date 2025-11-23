@@ -22,28 +22,29 @@ const Horizontal = () => {
   return (
     <main className="min-h-screen w-full mb-20 px-10">
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
-        {videos.map((video, index) => (
-          <div
-            key={index}
-            className="w-[400px] md:w-[300px] lg:w-[320px] lg:h-[550px] bg-gray-100 rounded-3xl"
-            data-aos="fade-up" 
-            data-aos-delay={index * 200} // 👈 หน่วงเวลาตาม index
-          >
-            <video
-              src={video.src}
-              className="w-full h-11/12 pb-4 object-cover mx-auto rounded-3xl"
-              loop
-              muted
-              autoPlay
-              playsInline
-            />
-            <div className="py-5 px-5 w-11/12 text-md flex flex-col items-start">
-              <h1 className="text-xl font-bold text-black">{video.header}</h1>
-              <p className="text-black">{video.title}</p>
-            </div>
-          </div>
-        ))}
-      </section>
+  {videos.map((video, index) => (
+    <div
+      key={index}
+      className="w-full max-w-xs md:max-w-sm lg:max-w-md bg-gray-100 rounded-3xl"
+      data-aos="fade-up" 
+      data-aos-delay={index * 200} // 👈 หน่วงเวลาตาม index
+    >
+      <video
+        src={video.src}
+        className="w-full h-11/12 pb-4 object-cover mx-auto rounded-3xl"
+        loop
+        muted
+        autoPlay
+        playsInline
+      />
+      <div className="py-5 px-5 w-full text-md flex flex-col items-start">
+        <h1 className="text-xl font-bold text-black">{video.header}</h1>
+        <p className="text-black">{video.title}</p>
+      </div>
+    </div>
+  ))}
+</section>
+
     </main>
   );
 };

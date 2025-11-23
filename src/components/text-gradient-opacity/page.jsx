@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
-const phrase = "Hi! I’m S.I'm 19 years old and interested in UI/UX and front-end development. Nice to meet you!";
+const phrase = "Hi! I’m S.I'm 20 years old and interested in Software Engineer or Software Development. Nice to meet you!";
 
 export default function Home() {
 

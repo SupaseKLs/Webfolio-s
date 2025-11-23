@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar/page";
 import Image from "next/image";
+import Experience from "@/components/timeline-demo"
 import Wise from "@/assets/img/p1.jpg";
 import Scg from "@/assets/img/p2.jpg";
 import Chula from "@/assets/img/p3.jpg";
@@ -107,6 +108,9 @@ export default function Home() {
           </div>
         </section>
 
+<section>
+  <Experience />
+</section>
         <section className="h-full">
           <div className="flex flex-col justify-center items-center mt-20 text-white">
             <h1 className="text-2xl md:text-5xl">Transformations Along</h1>
@@ -126,7 +130,7 @@ export default function Home() {
             </h1>
           </div>
           <div>
-            <p className="whitespace-pre-wrap text-8xl font-medium tracking-tighter text-black dark:text-white">
+            <p className="whitespace-pre-wrap text-8xl font-medium tracking-tighter text-white">
               <NumberTicker value={7} />
               <span>+</span>
             </p>
@@ -138,7 +142,7 @@ export default function Home() {
           <div className="h-96 flex items-center text-white">
             <div className="pl-6 uppercase">
               <h1 className="text-3xl">• Our Work</h1>
-              <h1 className="text-6xl pt-2 md:text-8xl">
+              <h1 className="text-6xl font-bold pt-2 md:text-8xl">
                 Explore see <br />
                 the project
               </h1>

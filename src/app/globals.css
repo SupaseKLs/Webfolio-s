@@ -6,7 +6,7 @@ body {
  background: #0E0F11;
 }
 .bg-s {
-  background-image: url(../assets/img/me.jpg);
+  background-image: url(../assets/img/bg.webp);
   background-size: cover; /* Ensures the image covers the entire area */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image */

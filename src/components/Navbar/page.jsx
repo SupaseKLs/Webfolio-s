@@ -85,7 +85,7 @@ const Navbar = () => {
     return (
         <>
             <motion.nav
-                className={`w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-20 py-3 font-medium 
+                className={`w-full z-50 px-10 md:px-20 fixed top-0 transition-all duration-1000 ease-in-out text-white h-fit py-3 font-medium 
         ${isVisible ? "translate-y-0" : "-translate-y-full"} 
         ${scrollPosition >= 50 ? 'bg-black text-white bg-opacity-30 backdrop-blur-md ' : 'bg-transparent text-black'}`}
                 variants={{

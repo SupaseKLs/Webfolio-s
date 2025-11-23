@@ -33,92 +33,17 @@ export default function Footer() {
         <motion.div ref={constrainsRef}>
 
           <div className="flex-col xl:flex-row flex justify-between px-4 md:px-16">
-            <div>
-              <h1 className='text-5xl xl:text-8xl py-6 uppercase font-bold'>Get in touch</h1>
-              <div className="group relative cursor-pointer p-2 border bg-white rounded-full overflow-hidden text-black text-center font-semibold" aria-label="Copy Email button" onClick={() => navigator.clipboard.writeText('laobutsasupasek@gmail.com')}>
-                <span className="text-2xl md:text-6xl px-4 py-8 translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
-                  laobutsasupasek@gmail.com
-                </span>
-                <div className="flex gap-2 text-white bg-blue-500 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
-                  <span className='text-2xl md:text-6xl'>Click to copy email !</span>
+              <div>
+                <h1 className='text-5xl xl:text-8xl py-6 uppercase font-bold'>Get in touch</h1>
+                <div className="group relative cursor-pointer p-2 border bg-white rounded-full overflow-hidden text-black text-center font-semibold" aria-label="Copy Email button" onClick={() => navigator.clipboard.writeText('laobutsasupasek@gmail.com')}>
+                  <span className="text-2xl md:text-6xl px-4 py-8 translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
+                    laobutsasupasek@gmail.com
+                  </span>
+                  <div className="flex gap-2 text-white bg-blue-500 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
+                    <span className='text-2xl md:text-6xl'>Click to copy email !</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            {/* <div className='absolute top-0'>
-           <motion.div
-              drag
-              dragConstraints={constrainsRef}
-
-              onDragStart={(event, info) =>
-                console.log(`start: ${info.point.x} ${info.point.y}`)
-              }
-              onDragEnd={(event, info) =>
-                console.log(`end: ${info.point.x} ${info.point.y}`)
-              }
-              className='w-52 h-34 text-3xl text-white h-20 rounded flex justify-center items-center bg-[#369EFF]'
-            >
-              <p>Hi</p>
-            </motion.div>
-            <motion.div
-              drag
-              dragConstraints={constrainsRef}
-
-              onDragStart={(event, info) =>
-                console.log(`start: ${info.point.x} ${info.point.y}`)
-              }
-              onDragEnd={(event, info) =>
-                console.log(`end: ${info.point.x} ${info.point.y}`)
-              }
-              className='w-52 h-34 text-3xl text-white h-20 rounded flex justify-center items-center bg-[#00C0A0]'
-            >
-              <p>My</p>
-            </motion.div>
-            <motion.div
-              drag
-              dragConstraints={constrainsRef}
-
-              onDragStart={(event, info) =>
-                console.log(`start: ${info.point.x} ${info.point.y}`)
-              }
-              onDragEnd={(event, info) =>
-                console.log(`end: ${info.point.x} ${info.point.y}`)
-              }
-              className='w-52 h-34 text-3xl text-white h-20 rounded flex justify-center items-center bg-[#FFC851]'
-            >
-              <p>nickname</p>
-            </motion.div>
-            <motion.div
-              drag
-              dragConstraints={constrainsRef}
-
-              onDragStart={(event, info) =>
-                console.log(`start: ${info.point.x} ${info.point.y}`)
-              }
-              onDragEnd={(event, info) =>
-                console.log(`end: ${info.point.x} ${info.point.y}`)
-              }
-              className='w-52 h-34 text-3xl text-white h-20 rounded flex justify-center items-center bg-[#FF89D4]'
-            >
-              <p>is</p>
-            </motion.div>
-            <motion.div
-              drag
-              dragConstraints={constrainsRef}
-
-              onDragStart={(event, info) =>
-                console.log(`start: ${info.point.x} ${info.point.y}`)
-              }
-              onDragEnd={(event, info) =>
-                console.log(`end: ${info.point.x} ${info.point.y}`)
-              }
-              className='w-52 h-34 text-3xl text-white h-20 rounded flex justify-center items-center bg-[#FF7D6B]'
-            >
-              <p>S</p>
-            </motion.div>
-           </div> */}
-
 
             <div>
               <h1 className='py-6 text-5xl font-bold uppercase'>Social</h1>

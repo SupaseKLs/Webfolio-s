@@ -39,7 +39,7 @@ export function NumberTicker({
 
   return (
     <span
-      className={`inline-block tabular-nums text-black dark:text-white tracking-wider ${className}`}
+      className={`inline-block tabular-nums text-white tracking-wider ${className}`}
       ref={ref}
     />
   );
